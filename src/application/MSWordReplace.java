@@ -51,7 +51,6 @@ public class MSWordReplace extends Application {
               counter = wordsToChange.size(); 
               labelText.setText("Change next element - " + wordsToChange.get(wordsToChange.size()-counter));
               userInputText.setText("");
-              System.out.println(wordsToChange.size());
          }	else if (counter==0) {  
         	 nextButton.setText("Replace all?");
              POIFSFileSystem fs = null;
@@ -73,7 +72,6 @@ public class MSWordReplace extends Application {
              System.out.println(counter);
              userInput = userInputText.getText();
              templateTranslate.add(userInput);
-             System.out.println(templateTranslate);
              userInputText.setText("");
         	 	if (counter>=1) {
         	 		labelText.setText("Change next element - " + wordsToChange.get(wordsToChange.size()-counter));
